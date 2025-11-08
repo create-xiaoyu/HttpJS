@@ -17,6 +17,9 @@ HttpJS.Download("https://example.com/example.txt", "config/httpjs", "helloworld.
 > **⚠️ 警告**
 > 请确保文件路径存在
 
+> **✅ 谢鸣**
+> 此模组开发参照了[**FilesJS**](https://github.com/xiaoliziawa/Files-JS)
+
 English:
 
 This mod allows you to use KubeJS to download files from the internet.
@@ -35,3 +38,6 @@ HttpJS.Download("https://example.com/example.txt", "config/httpjs", "helloworld.
 
 > **⚠️ Warning**
 > Please make sure the file path exists
+
+> **✅ Acknowledgment**  
+> This mod was developed with reference to [**FilesJS**](https://github.com/xiaoliziawa/Files-JS).
