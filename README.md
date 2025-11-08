@@ -1,25 +1,37 @@
+中文：
 
-Installation information
-=======
+这个模组允许你使用Kubejs来从网络上下载文件
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+使用方式:
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+```javascript
+HttpJS.Download("链接", "保存路径(从.minecraft开始)", "要保存的文件名，如果为null则使用链接中的文件名")
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+// 示例
+HttpJS.Download("https://example.com/example.txt", "config/httpjs", "null")
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+// 示例
+HttpJS.Download("https://example.com/example.txt", "config/httpjs", "helloworld.txt")
+```
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+> **⚠️ 警告**
+> 请确保文件路径存在
+
+English:
+
+This mod allows you to use KubeJS to download files from the internet.
+
+Usage:
+
+```javascript
+HttpJS.Download("URL", "Save path (starting from .minecraft)", "File name to save as, use null to keep the name from the URL")
+
+// Example
+HttpJS.Download("https://example.com/example.txt", "config/httpjs", "null")
+
+// Example
+HttpJS.Download("https://example.com/example.txt", "config/httpjs", "helloworld.txt")
+```
+
+> **⚠️ Warning**
+> Please make sure the file path exists
