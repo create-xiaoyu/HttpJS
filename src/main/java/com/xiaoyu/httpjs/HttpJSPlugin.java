@@ -8,13 +8,11 @@ import dev.latvian.mods.kubejs.script.BindingRegistry;
 
 public class HttpJSPlugin implements KubeJSPlugin {
     public static final EventGroup GROUP = EventGroup.of("HttpJS");
-    public static final EventHandler HTTP_DOWNLOAD = GROUP.server("HttpDownload", () -> HttpEventJS.class);
+    public static final EventHandler HTTP_DOWNLOAD = GROUP.common("HttpDownload", () -> HttpEventJS.class);
 
     @Override
     public void registerBindings(BindingRegistry bindings) {
-        if (bindings.type().isServer()) {
-            bindings.add("HttpJS", new HttpWrapper());
-        }
+        bindings.add("HttpJS", new HttpWrapper());
     }
 
     @Override
